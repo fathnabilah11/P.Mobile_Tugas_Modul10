@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".ui.main.MenuActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_utama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:src="@drawable/logo_main"
+                app:layout_constraintEnd_toEndOf="@id/layout_utama"
+                app:layout_constraintStart_toStartOf="@id/layout_utama"
+                app:layout_constraintTop_toTopOf="@id/layout_utama" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_radius"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Pangkas Rambut"
+                android:textAllCaps="false"
+                android:textColor="#5A5A5A"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/layout_utama"
+                app:layout_constraintStart_toStartOf="@id/layout_utama"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
